@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ndge — Privacy Policy</title>
+<style>
+  :root {
+    --canvas:#E9DFD4; --surface:#fff; --ink:#46382F; --ink-soft:#5A4C42;
+    --ink-faint:#7A6B5D; --line:#D3C5B6; --primary:#8A7263; --primary-ink:#37291F;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:48px 20px 96px; background:var(--canvas); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  main { max-width:680px; margin:0 auto; }
+  .mark {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:64px; height:64px; border-radius:15px; background:var(--primary-ink);
+    color:#fff; font:700 27px/1 Georgia,'Times New Roman',serif; letter-spacing:-.5px;
+    margin-bottom:28px;
+  }
+  h1 { font-size:32px; line-height:1.2; margin:0 0 6px; letter-spacing:-.4px; }
+  .updated { color:var(--ink-faint); font-size:14px; margin:0 0 40px; }
+  h2 { font-size:20px; margin:40px 0 12px; letter-spacing:-.2px; }
+  p, li { color:var(--ink-soft); }
+  ul { padding-left:22px; }
+  li { margin-bottom:8px; }
+  strong { color:var(--ink); }
+  .card {
+    background:var(--surface); border:1px solid var(--line); border-radius:16px;
+    padding:20px 24px; margin:28px 0;
+  }
+  .card p:first-child { margin-top:0; }
+  .card p:last-child { margin-bottom:0; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--ink); font-weight:600; }
+  td { color:var(--ink-soft); }
+  a { color:var(--primary-ink); }
+  footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--line);
+           color:var(--ink-faint); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">Dge.</div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Ndge · Last updated 8 August 2026</p>
+
+  <div class="card">
+    <p><strong>The short version.</strong> What you write in Ndge stays on your
+    iPhone. If you sign in with Apple, a copy also goes to your own private
+    iCloud account, which belongs to you and not to us. We run no server that
+    holds your answers and we have no way to read them.</p>
+    <p>Separately, the app sends anonymous usage counts so we can tell whether
+    it is working. Those counts never include anything you write.</p>
+  </div>
+
+  <h2>What Ndge stores on your device</h2>
+  <p>Questions, your answers, any notes you type, and any photos you attach are
+  saved in a private database on your iPhone that only Ndge can read. Deleting
+  the app removes all of it.</p>
+
+  <h2>iCloud backup, if you choose it</h2>
+  <p>Signing in with Apple is optional and nothing in the app requires it. If
+  you do sign in, your entries are mirrored to your own private iCloud database
+  using Apple's CloudKit.</p>
+  <p>That data sits in your personal iCloud account, governed by
+  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We
+  cannot see it, query it, or export it. You can switch the backup off at any
+  time in Settings, or revoke access entirely in iOS Settings under your Apple
+  Account.</p>
+  <p>When you sign in, Apple gives the app a user identifier and, on the first
+  authorisation only, your name. Both are stored in your device's keychain and
+  are never transmitted anywhere. Ndge does not request your email address.</p>
+
+  <h2>Anonymous usage measurement</h2>
+  <p>Ndge sends a small set of events to
+  <a href="https://posthog.com/">PostHog</a>, an analytics service, so we can
+  see whether people keep using the app. Every event is a count, a yes/no, or a
+  value from a fixed list.</p>
+
+  <table>
+    <tr><th>Collected</th><th>Not collected</th></tr>
+    <tr>
+      <td>
+        A random identifier created when you install the app<br>
+        Whether the app was opened, and for how long<br>
+        Whether a check-in was answered, skipped or put off<br>
+        How many options you tapped, and whether you added a note or photo<br>
+        App version, iOS version, device model, screen size, language, time zone
+      </td>
+      <td>
+        Your questions or answers<br>
+        Anything you type<br>
+        Your photos<br>
+        Your name or email address<br>
+        Your location<br>
+        Your IP address<br>
+        Any advertising identifier
+      </td>
+    </tr>
+  </table>
+
+  <p>This is enforced by how the app is built rather than by policy alone. The
+  event format has no field capable of carrying free text, and an automated
+  check fails the build if one is ever added.</p>
+  <p>IP-based location lookup is disabled, and the IP address itself is
+  discarded rather than stored. If you sign in with Apple, the random installation
+  identifier is linked to a one-way cryptographic hash of your Apple user
+  identifier so that the same person on two devices is counted once. The
+  identifier itself is never sent.</p>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We do not sell or rent your information.</li>
+    <li>We do not share it with advertisers or data brokers.</li>
+    <li>We do not track you across other apps or websites.</li>
+    <li>There are no third-party advertising or tracking SDKs in the app.</li>
+  </ul>
+
+  <h2>Where data is held, and for how long</h2>
+  <p>Your entries stay on your device, and in your own iCloud if you enabled
+  backup, for as long as you keep them. Anonymous usage events are held by
+  PostHog for up to one year and then deleted.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Use Ndge without signing in. Everything works.</li>
+    <li>Turn iCloud backup off in Settings at any time.</li>
+    <li>Revoke Sign in with Apple in iOS Settings → your name → Sign in with Apple.</li>
+    <li>Delete the app to erase everything stored on the device.</li>
+    <li>Email us to have anonymous usage data associated with your installation deleted.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Ndge is not directed at children under 13, and we do not knowingly collect
+  information from them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes in a way that affects what is collected, the date at
+  the top will change and the update will be described here.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or about your data:
+  <a href="mailto:saranshbedi@gmail.com">saranshbedi@gmail.com</a></p>
+
+  <footer>Ndge is an independent app. It has no server, no account system beyond
+  Sign in with Apple, and no business model built on your data.</footer>
+</main>
+</body>
+</html>
